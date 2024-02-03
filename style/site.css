@@ -1,0 +1,340 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.container {
+    width: 85%;
+    margin: 15px auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(187, 65, 21);
+    box-shadow: 1px 2px 3px rgba(128, 128, 128, 0.4);
+    height: 60px;
+    position: relative;
+    width: 100%;
+}
+
+nav div {
+    padding: 5px;
+    line-height: 40px;
+}
+
+nav div h1 {
+    color: white;
+    line-height: 50px;
+    font-weight: 100;
+}
+
+nav div h1 .link {
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    line-height: 40px;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul button {
+    color: white;
+    background-color: yellowgreen;
+    text-align: center;
+    text-transform: uppercase;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 0 14px;
+    margin: 10px;
+    font-size: 14px;
+    width: 100px;
+}
+
+nav ul form {
+    box-shadow: none;
+    width: 120px;
+    height: 60px;
+}
+
+nav ul form button {
+    float: right;
+    margin-top: -2px;
+}
+
+.banner {
+    width: 100%;
+    height: 100px;
+    background-color: coral;
+    margin-bottom: 50px;
+}
+
+.banner h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    color: white;
+    line-height: 100px;
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.3);
+    width: 400px;
+    padding: 10px;
+    margin: 3rem auto;
+}
+
+form h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: coral;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 15px;
+    /* height: 40px; */
+}
+
+.input-field label {
+    line-height: 40px;
+    width: 35%;
+    text-align: end;
+    margin-right: 35px;
+}
+
+button,
+input[type="submit"] {
+    color: white;
+    background-color: rgb(141, 77, 54);
+    text-align: center;
+    text-transform: uppercase;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 0 14px;
+    font-size: 14px;
+    width: 65%;
+    margin-right: 20px;
+}
+
+.input-field input,
+textarea,
+button,
+select {
+    border: 1px solid rgb(141, 77, 54);
+    border-radius: 5px;
+    width: 65%;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.error {
+    text-align: center;
+    font-size: 12px;
+    color: red;
+    font-weight: 100;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top form {
+    background: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin-right: -20px;
+}
+
+.top form select {
+    width: 50%;
+}
+
+.top form button {
+    width: 50%;
+}
+
+.top button {
+    width: 20%;
+    background-color: rgb(109, 54, 34);
+}
+
+.top h1 {
+    font-weight: 100;
+    color: teal;
+}
+
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    /* background-color: #fefefe; */
+    margin: auto;
+    padding: 20px;
+    width: 60%;
+}
+
+.modal-content span {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 2px;
+}
+
+.close {
+    color: red;
+    float: right;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: -100px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+hr {
+    margin: 15px 0;
+}
+
+table {
+    margin: 8px;;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table thead th,
+table tbody tr td {
+    border: 1px solid rgba(0, 128, 128, 0.3);
+    padding: 8px;
+}
+
+thead th {
+    padding: 12px 0;
+    text-align: left;
+    background-color: rgb(185, 97, 65);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+td a {
+    color: green;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.delete {
+    color: red;
+    padding: 0 15px;
+}
+
+.collapse {
+    display: none;
+    transition: 0.3s;
+}
+
+.collapse-visible {
+    animation: expand;
+    transition: 0.3s;
+    display: block;
+}
+
+#expand {
+    cursor: pointer;
+}
+
+@keyframes expand {
+    0% {
+        margin-top: -80px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    80% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
